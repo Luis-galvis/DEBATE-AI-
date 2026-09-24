@@ -1,0 +1,18 @@
+{
+  "country_name": "Suecia / Modelo Nórdico (Avanzada de Bienestar)",
+  "country_code": "SWE",
+  "initial_gdp": 160.0,
+  "base_gdp_pc_usd": 58000.0,
+  "initial_k": 320.0,
+  "initial_h": 90.0,
+  "initial_l": 100.0,
+  "initial_tfp": 1.45,
+  "initial_debt_gdp": 0.38,
+  "n_pop_growth": 0.005,
+  "initial_inflation": 0.025,
+  "initial_unemployment": 0.068,
+  "baseline_gini": 0.28,
+  "baseline_poverty": 0.09,
+  "tax_revenue_gdp": 0.43,
+  "spending_gdp": 0.48
+}

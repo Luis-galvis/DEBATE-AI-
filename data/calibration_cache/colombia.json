@@ -1,0 +1,21 @@
+{
+  "country_name": "Colombia (Emergente de Ingreso Medio)",
+  "country_code": "COL",
+  "initial_gdp": 100.0,
+  "base_gdp_pc_usd": 7500.0,
+  "initial_k": 210.0,
+  "initial_h": 45.0,
+  "initial_l": 100.0,
+  "initial_tfp": 0.95,
+  "initial_debt_gdp": 0.58,
+  "n_pop_growth": 0.009,
+  "initial_inflation": 0.055,
+  "initial_unemployment": 0.098,
+  "baseline_gini": 0.53,
+  "baseline_poverty": 0.36,
+  "baseline_informality": 0.56,
+  "pension_coverage": 0.25,
+  "state_capacity_index": 0.62,
+  "tax_revenue_gdp": 0.19,
+  "spending_gdp": 0.28
+}

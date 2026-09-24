@@ -1,0 +1,18 @@
+{
+  "country_name": "Estados Unidos (Economía Avanzada de Mercado)",
+  "country_code": "USA",
+  "initial_gdp": 200.0,
+  "base_gdp_pc_usd": 79000.0,
+  "initial_k": 380.0,
+  "initial_h": 85.0,
+  "initial_l": 100.0,
+  "initial_tfp": 1.55,
+  "initial_debt_gdp": 1.15,
+  "n_pop_growth": 0.004,
+  "initial_inflation": 0.03,
+  "initial_unemployment": 0.042,
+  "baseline_gini": 0.41,
+  "baseline_poverty": 0.12,
+  "tax_revenue_gdp": 0.26,
+  "spending_gdp": 0.37
+}

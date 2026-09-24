@@ -1,0 +1,67 @@
+# =============================================================================
+# REGISTRO ÚNICO DE PARÁMETROS MACROECONÓMICOS Y ESTRUCTURALES
+# Validado mediante Pydantic en src/simulation/policy_vector.py
+# =============================================================================
+
+macro_parameters:
+  production_function:
+    alpha_physical_capital: 0.30
+    beta_human_capital: 0.25
+    gamma_labor: 0.45
+    delta_k_depreciation: 0.05
+    delta_h_depreciation: 0.02
+  
+  finance_and_monetary:
+    r_world_risk_free: 0.035
+    inflation_target: 0.030
+    taylor_rule_inflation_weight: 1.50
+    taylor_rule_output_weight: 0.50
+  
+  consumption_distribution:
+    mpc_quintiles: [0.96, 0.88, 0.78, 0.68, 0.52]
+    base_market_shares: [0.04, 0.09, 0.14, 0.22, 0.51]
+    tax_incidence_weights: [0.02, 0.06, 0.14, 0.26, 0.52]
+    transfer_incidence_weights: [0.45, 0.30, 0.15, 0.08, 0.02]
+  
+  bounds_and_tolerances:
+    claims_verification_tolerance_pct: 0.02  # 2% de tolerancia numérica para citas
+    debt_warning_threshold_gdp: 0.70
+    gini_lower_bound: 0.15
+    gini_upper_bound: 0.70
+
+initial_archetypes:
+  capitalist:
+    state_ownership: 0.05
+    max_tax_rate: 0.15
+    tax_progressivity: 0.20
+    public_spending_gdp: 0.12
+    social_transfers_coverage: 0.15
+    market_regulation: 0.15
+    labor_protection: 0.15
+    trade_openness: 0.95
+    fiscal_rule_strictness: 0.90
+    central_bank_independence: 0.95
+
+  collectivist:
+    state_ownership: 0.85
+    max_tax_rate: 0.80
+    tax_progressivity: 0.90
+    public_spending_gdp: 0.85
+    social_transfers_coverage: 0.85
+    market_regulation: 0.85
+    labor_protection: 0.85
+    trade_openness: 0.35
+    fiscal_rule_strictness: 0.35
+    central_bank_independence: 0.25
+
+  socdem:
+    state_ownership: 0.25
+    max_tax_rate: 0.65
+    tax_progressivity: 0.75
+    public_spending_gdp: 0.65
+    social_transfers_coverage: 0.80
+    market_regulation: 0.55
+    labor_protection: 0.70
+    trade_openness: 0.85
+    fiscal_rule_strictness: 0.75
+    central_bank_independence: 0.90

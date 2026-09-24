@@ -1,0 +1,262 @@
+# Glosario Central de Términos, Métricas y Conceptos (config/glossary.yaml)
+# Fuente única de verdad para la capa de explicación pedagógica universal.
+
+glossary:
+  # ===========================================================================
+  # 1. MÉTRICAS MACROECONÓMICAS Y SOCIALES
+  # ===========================================================================
+  - id: "gini_disposable"
+    nombre_simple: "Desigualdad de ingresos"
+    nombre_tecnico: "Índice de Gini del ingreso disponible"
+    categoria: "Desigualdad y Pobreza"
+    definicion_corta: "Mide qué tan repartido está el dinero entre las personas tras impuestos y ayudas públicas."
+    analogia_cotidiana: "Una pizza para 10 personas: si todos comen una porción igual el Gini es 0; si uno solo se come 9 porciones, el Gini es casi 1."
+    ejemplo_con_datos: "En el Consenso, el Gini promedio se ubica en {gini_avg:.3f}, reduciendo la brecha frente al {gini_cap:.3f} del modelo Capitalista."
+    como_leerlo: "Va de 0 a 1. Menos de 0.30 es muy parejo (tipo nórdico); entre 0.30 y 0.45 es intermedio; más de 0.48 indica alta desigualdad."
+    por_que_importa: "Una desigualdad extrema fractura la cohesión social y reduce la movilidad de las familias más vulnerables."
+    lo_que_no_mide: "No mide la riqueza total acumulada en propiedades ni el nivel absoluto de ingresos de un país."
+    sinonimos: ["coeficiente de Gini", "concentración del ingreso", "brecha distributiva"]
+    nivel_de_detalle: "simple"
+
+  - id: "terminal_gdp_pc"
+    nombre_simple: "Ingreso promedio por habitante"
+    nombre_tecnico: "PIB per cápita terminal a 30 años"
+    categoria: "Crecimiento y Producción"
+    definicion_corta: "Es el valor de todo lo producido dividido entre el número total de habitantes del país."
+    analogia_cotidiana: "El tamaño total de la tarta económica nacional repartida equitativamente entre cada habitante."
+    ejemplo_con_datos: "Al año 30, el modelo genera un ingreso promedio de ${terminal_gdp_pc:,.0f} USD por persona."
+    como_leerlo: "Cifras mayores indican más producción promedio. Crece con mayor productividad, inversión y tecnología."
+    por_que_importa: "Permite financiar mejores hospitales, escuelas, infraestructura y salarios más altos para la población."
+    lo_que_no_mide: "No dice cómo está repartido ese ingreso: un país puede tener un ingreso promedio muy alto con mucha pobreza si pocos concentran el dinero."
+    sinonimos: ["PIB por persona", "renta per cápita", "producto por habitante"]
+    nivel_de_detalle: "simple"
+
+  - id: "terminal_debt_gdp"
+    nombre_simple: "Deuda del gobierno frente al tamaño de la economía"
+    nombre_tecnico: "Deuda pública / PIB terminal"
+    categoria: "Finanzas Públicas"
+    definicion_corta: "Compara el dinero total que debe el Estado con lo que el país produce en un año entero."
+    analogia_cotidiana: "La deuda de una tarjeta de crédito comparada con tu sueldo anual: deber el 40% de tu sueldo anual es manejable; deber el 150% es muy riesgoso."
+    ejemplo_con_datos: "El Consenso proyecta una deuda terminal de {terminal_debt_gdp:.1f}% del PIB, manteniéndose en zona segura."
+    como_leerlo: "Menos del 45% es muy seguro; entre 45% y 70% es moderado; más del 80% genera peligro de crisis y altos intereses."
+    por_que_importa: "Si el gobierno se endeuda demasiado, debe gastar en pagar intereses en lugar de invertir en salud y educación."
+    lo_que_no_mide: "No mide quién tiene los bonos (si son bancos locales o fondos extranjeros) ni los plazos de pago."
+    sinonimos: ["endeudamiento público", "apalancamiento fiscal", "ratio deuda producto"]
+    nivel_de_detalle: "simple"
+
+  - id: "unemployment_avg"
+    nombre_simple: "Personas buscando empleo sin encontrarlo"
+    nombre_tecnico: "Tasa de desempleo abierta promedio"
+    categoria: "Trabajo y Empleo"
+    definicion_corta: "Porcentaje de personas que quieren y pueden trabajar pero no consiguen empleo formal."
+    analogia_cotidiana: "De cada 100 vecinos disponibles para trabajar en el barrio, cuántos están desocupados."
+    ejemplo_con_datos: "El desempleo promedio en la trayectoria es de {unemployment_avg:.1f}%."
+    como_leerlo: "Menos del 5% se considera casi pleno empleo; entre 6% y 9% es normal; más del 10% refleja desempleo grave."
+    por_que_importa: "El desempleo prolongado causa pérdida de ingresos, angustia familiar y desaprovecha el talento del país."
+    lo_que_no_mide: "No cuenta a quienes tienen empleos informales precarios ni a quienes se desanimaron y dejaron de buscar trabajo."
+    sinonimos: ["desocupación", "falta de trabajo", "paro laboral"]
+    nivel_de_detalle: "simple"
+
+  - id: "inflation_avg"
+    nombre_simple: "Aumento general de precios"
+    nombre_tecnico: "Tasa de inflación anual promedio"
+    categoria: "Precios y Finanzas"
+    definicion_corta: "La velocidad a la que suben los precios de los bienes y servicios cada año."
+    analogia_cotidiana: "Si el pan costaba 100 pesos el año pasado y la inflación es del 5%, ahora cuesta 105 pesos."
+    ejemplo_con_datos: "La inflación promedio anual se ancla en {inflation_avg:.1f}% gracias a la autonomía del Banco Central."
+    como_leerlo: "Entre 2% y 3% anual es el rango ideal para una economía moderna; más de 6% erosiona rápido los salarios."
+    por_que_importa: "La inflación alta golpea con mayor fuerza a las familias de menores ingresos que no pueden proteger sus ahorros."
+    lo_que_no_mide: "No refleja si los precios de un producto específico (como el aguacate) subieron por una mala cosecha temporal."
+    sinonimos: ["carestía", "alza del costo de vida", "IPC anual"]
+    nivel_de_detalle: "simple"
+
+  - id: "social_welfare_index"
+    nombre_simple: "Bienestar social y calidad de vida integral"
+    nombre_tecnico: "Índice sintético de bienestar social (SWI)"
+    categoria: "Bienestar y Servicios"
+    definicion_corta: "Nota que resume cómo vive la gente: mide la salud, el ingreso, la igualdad y la libertad."
+    analogia_cotidiana: "La nota final de un estudiante que evalúa varias materias importantes, no solo una sola materia."
+    ejemplo_con_datos: "El modelo de Consenso logra {social_welfare_index:.1f} puntos sobre 100, superando a los tres modelos individuales."
+    como_leerlo: "De 0 a 100 puntos. Más de 80 puntos refleja una sociedad próspera, equitativa y con finanzas estables."
+    por_que_importa: "Recuerda que el éxito de un país no es solo producir más dinero, sino que la gente viva bien, sana y en libertad."
+    lo_que_no_mide: "Es una fórmula matemática que resume varias dimensiones, por lo que depende de cómo se ponderan los objetivos."
+    sinonimos: ["calidad de vida", "progreso integral", "índice de desarrollo"]
+    nivel_de_detalle: "simple"
+
+  - id: "resilience_score"
+    nombre_simple: "Capacidad de resistir crisis (Resiliencia)"
+    nombre_tecnico: "Puntaje compuesto de resiliencia macroeconómica"
+    categoria: "Resiliencia ante Choques"
+    definicion_corta: "Mide qué tan poco cae la economía ante una crisis y qué tan rápido se recupera."
+    analogia_cotidiana: "Un barco con buen diseño que soporta una tormenta fuerte sin volcarse y vuelve rápido a su rumbo."
+    ejemplo_con_datos: "El puntaje de resiliencia del consenso es de {resilience_score:.1f} pts, soportando los 7 choques de estrés."
+    como_leerlo: "De 0 a 100 puntos. Más de 75 puntos indica amortiguadores fiscales y productivos sólidos ante crisis globales."
+    por_que_importa: "Evita que una crisis internacional destruya millones de empleos y lance familias a la pobreza."
+    lo_que_no_mide: "No puede predecir cuándo ocurrirá una crisis en el mundo real, solo cómo reacciona la economía si ocurre."
+    sinonimos: ["resistencia económica", "solidez ante choques", "estabilidad ante crisis"]
+    nivel_de_detalle: "simple"
+
+  # ===========================================================================
+  # 2. PARÁMETROS DE POLÍTICA PÚBLICA (ESCALA 0 A 1)
+  # ===========================================================================
+  - id: "state_ownership"
+    nombre_simple: "Propiedad del Estado en empresas y recursos"
+    nombre_tecnico: "Proporción de capital público productivo"
+    categoria: "Parámetros de Política"
+    definicion_corta: "Qué porcentaje de las grandes empresas, minas y servicios clave pertenecen al Estado."
+    analogia_cotidiana: "0 = todos los negocios son privados; 1 = todas las fábricas y bancos pertenecen al Estado."
+    ejemplo_con_datos: "En el Consenso está en {state_ownership:.2f} (equivalente al {state_ownership_real:.1f}% de activos públicos)."
+    como_leerlo: "0.0 a 1.0. Valores bajos dan primacía a la inversión privada; valores altos aumentan el control público directo."
+    por_que_importa: "Determina si las ganancias y decisiones estratégicas las toma el mercado privado o el gobierno."
+    lo_que_no_mide: "No garantiza por sí solo si las empresas públicas o privadas serán bien administradas o transparentes."
+    sinonimos: ["empresas públicas", "estatización vs privatización", "capital público"]
+    nivel_de_detalle: "simple"
+
+  - id: "max_tax_rate"
+    nombre_simple: "Impuesto máximo a rentas altas"
+    nombre_tecnico: "Tasa impositiva marginal superior"
+    categoria: "Parámetros de Política"
+    definicion_corta: "Porcentaje de impuestos que pagan las personas y empresas con mayores ingresos."
+    analogia_cotidiana: "De cada 100 pesos adicionales que gana un millonario, cuántos pesos van para el bien común."
+    ejemplo_con_datos: "El Consenso fija este parámetro en {max_tax_rate:.2f} (tasa máxima real de {max_tax_rate_real:.1f}%)."
+    como_leerlo: "0 = impuestos bajos (10%); 1 = impuestos nórdicos muy altos (75%)."
+    por_que_importa: "Financia la educación y hospitales públicos, pero tasas excesivas pueden desincentivar la inversión."
+    lo_que_no_mide: "No mide la evasión fiscal ni la calidad del gasto que hace el gobierno con lo recaudado."
+    sinonimos: ["tasa marginal máxima", "impuesto a los ricos", "tributación sobre el capital"]
+    nivel_de_detalle: "simple"
+
+  - id: "public_spending_gdp"
+    nombre_simple: "Gasto del gobierno frente a la economía"
+    nombre_tecnico: "Gasto público como porcentaje del PIB"
+    categoria: "Parámetros de Política"
+    definicion_corta: "Cuánto dinero gasta el Estado en total en relación con todo lo que produce el país."
+    analogia_cotidiana: "Qué porción de la economía nacional es gestionada directamente por el presupuesto del gobierno."
+    ejemplo_con_datos: "El Consenso establece un gasto del {public_spending_real:.1f}% del PIB, priorizando educación y salud."
+    como_leerlo: "20% a 30% es un Estado pequeño; 40% a 55% es un Estado de bienestar amplio (tipo Europa/Nórdico)."
+    por_que_importa: "Permite proveer servicios públicos universales y proteger a los ciudadanos en momentos de necesidad."
+    lo_que_no_mide: "No mide si el dinero se gasta con eficiencia o si se pierde en burocracia y corrupción."
+    sinonimos: ["tamaño del Estado", "presupuesto público", "gasto gubernamental"]
+    nivel_de_detalle: "simple"
+
+  - id: "fiscal_rule_strictness"
+    nombre_simple: "Rigor de la regla contra el déficit"
+    nombre_tecnico: "Estrictez de la regla fiscal y tope de deuda"
+    categoria: "Parámetros de Política"
+    definicion_corta: "Obligación legal del gobierno de no gastar más de lo que ingresa y frenar el endeudamiento."
+    analogia_cotidiana: "Una regla familiar estricta de no usar la tarjeta de crédito si no hay dinero seguro para pagarla."
+    ejemplo_con_datos: "El Consenso fija un rigor fiscal de {fiscal_rule_strictness:.2f}, protegiendo al país de crisis de deuda."
+    como_leerlo: "0 = gobierno gasta a discreción sin límites; 1 = tope legal estricto de deuda y déficit cero obligatorio."
+    por_que_importa: "Garantiza que el país no quiebre ni sufra subidas descontroladas de tasas de interés."
+    lo_que_no_mide: "Si es demasiado rígida, puede impedir que el gobierno gaste para ayudar a la gente durante una recesión."
+    sinonimos: ["disciplina fiscal", "freno de deuda", "tope presupuestario"]
+    nivel_de_detalle: "simple"
+
+  - id: "central_bank_independence"
+    nombre_simple: "Autonomía del Banco Central para frenar inflación"
+    nombre_tecnico: "Independencia técnica de la autoridad monetaria"
+    categoria: "Parámetros de Política"
+    definicion_corta: "Libertad de los técnicos del Banco Central para fijar tasas de interés sin interferencia política."
+    analogia_cotidiana: "Un árbitro deportivo imparcial que hace cumplir las reglas del juego sin obedecer al presidente de turno."
+    ejemplo_con_datos: "El parámetro de autonomía es de {central_bank_independence:.2f}, anclando la inflación al 3%."
+    como_leerlo: "0 = el gobierno puede imprimir dinero para sus gastos; 1 = total independencia con meta fija de precios."
+    por_que_importa: "Evita que los gobiernos impriman dinero sin respaldo, lo que destruiría el valor del salario por hiperinflación."
+    lo_que_no_mide: "No resuelve por sí sola los problemas de falta de empleo ni las desigualdades productivas."
+    sinonimos: ["autonomía monetaria", "independencia del banco emisor", "meta de inflación"]
+    nivel_de_detalle: "simple"
+
+  # ===========================================================================
+  # 3. SISTEMAS ECONÓMICOS Y ESCUELAS DE PENSAMIENTO
+  # ===========================================================================
+  - id: "capitalist_system"
+    nombre_simple: "El Capitalista (Libre Mercado)"
+    nombre_tecnico: "Arquetipo de libre mercado y escuela austriaca/neoclásica"
+    categoria: "Sistemas Económicos"
+    definicion_corta: "Defiende que la libertad de empresa, precios libres y bajos impuestos maximizan la innovación."
+    analogia_cotidiana: "Una carrera abierta donde cada corredor corre a su ritmo y gana según su esfuerzo y habilidad."
+    ejemplo_con_datos: "Logra el mayor PIB terminal (${gdp_cap:,.0f}), pero registra un Gini alto de {gini_cap:.3f}."
+    como_leerlo: "Prioriza el crecimiento económico rápido, la desregulación y la iniciativa individual privada."
+    por_que_importa: "Explica el motor que impulsa la creación de nuevas tecnologías, empresas y abundancia material."
+    lo_que_no_mide: "No garantiza una red de seguridad suficiente para quienes sufren desgracias o quedan rezagados."
+    sinonimos: ["libre mercado", "capitalismo liberal", "visión Hayek/Friedman"]
+    nivel_de_detalle: "simple"
+
+  - id: "collectivist_system"
+    nombre_simple: "El Colectivista (Planificación Democrática)"
+    nombre_tecnico: "Arquetipo socialista democrático y de planificación participativa"
+    categoria: "Sistemas Económicos"
+    definicion_corta: "Defiende que los recursos clave deben ser de todos y repartirse con justicia social."
+    analogia_cotidiana: "Una cooperativa vecinal donde todos deciden juntos qué sembrar y los beneficios se reparten entre todos."
+    ejemplo_con_datos: "Logra la mayor reducción de desigualdad (Gini de {gini_col:.3f}), pero con menor crecimiento (${gdp_col:,.0f})."
+    como_leerlo: "Prioriza erradicar la pobreza, garantizar derechos universales y democratizar los centros de trabajo."
+    por_que_importa: "Plantea que la economía debe servir a las personas y no al revés, evitando la concentración del poder."
+    lo_que_no_mide: "Puede enfrentar dificultades de cálculo económico y riesgos de sostenibilidad fiscal si falta inversión privada."
+    sinonimos: ["socialismo democrático", "cooperativismo", "visión Marx/Lange"]
+    nivel_de_detalle: "simple"
+
+  - id: "socdem_system"
+    nombre_simple: "El Socialdemócrata (Economía Mixta Nórdica)"
+    nombre_tecnico: "Arquetipo socialdemócrata y modelo nórdico de bienestar"
+    categoria: "Sistemas Económicos"
+    definicion_corta: "Combina un mercado abierto y dinámico con impuestos progresivos y un Estado de bienestar fuerte."
+    analogia_cotidiana: "Una carrera con reglas justas donde hay libertad para correr, pero todos tienen garantizadas zapatillas y salud."
+    ejemplo_con_datos: "Alcanza un equilibrio con PIB de ${gdp_soc:,.0f} y un Gini de {gini_soc:.3f}."
+    como_leerlo: "Busca lo mejor de ambos mundos: eficiencia productiva privada con solidaridad y protección pública."
+    por_que_importa: "Ha demostrado en países reales (como Suecia, Dinamarca o Noruega) alta calidad de vida con baja pobreza."
+    lo_que_no_mide: "Requiere una ciudadanía con alta confianza institucional y honestidad para pagar impuestos altos."
+    sinonimos: ["modelo nórdico", "economía social de mercado", "visión Keynes/Rawls"]
+    nivel_de_detalle: "simple"
+
+  - id: "consensus_system"
+    nombre_simple: "Consenso Sintetizado (Punto Medio)"
+    nombre_tecnico: "Solución de compromiso óptima en la frontera de Pareto (NSGA-III)"
+    categoria: "Sistemas Económicos"
+    definicion_corta: "El paquete de políticas acordado que optimiza el bienestar general sin violar las líneas rojas."
+    analogia_cotidiana: "Un acuerdo equilibrado entre socios donde todos ceden en lo secundario para ganar en lo esencial."
+    ejemplo_con_datos: "Alcanza el mayor Índice de Bienestar Social ({social_welfare_index:.1f} pts) y resiste los 7 choques de estrés."
+    como_leerlo: "Representa el mejor compromiso matemático posible entre crecimiento, igualdad y solvencia fiscal."
+    por_que_importa: "Demuestra que la cooperación informada por datos supera a los dogmas extremos aislados."
+    lo_que_no_mide: "No es una solución mágica: requiere disciplina de los gobernantes y aceptar compensaciones."
+    sinonimos: ["punto medio", "solución de Nash", "acuerdo de compromiso"]
+    nivel_de_detalle: "simple"
+
+  # ===========================================================================
+  # 4. MÉTODOS Y CONCEPTOS ESTADÍSTICOS
+  # ===========================================================================
+  - id: "pareto_frontier"
+    nombre_simple: "Menú de los mejores compromisos posibles"
+    nombre_tecnico: "Frontera de Pareto de soluciones no dominadas"
+    categoria: "Métodos y Estadística"
+    definicion_corta: "El conjunto de todas las opciones donde para mejorar en una cosa es obligatorio empeorar en otra."
+    analogia_cotidiana: "Comprar un coche: no existe uno que sea a la vez el más barato, el más rápido y el más seguro del mundo; debes elegir tu mejor combinación."
+    ejemplo_con_datos: "El algoritmo NSGA-III evaluó 300 opciones hasta hallar las combinaciones más eficientes."
+    como_leerlo: "Cualquier punto en la frontera es 'óptimo': elegir entre ellos depende de qué valore más cada sociedad."
+    por_que_importa: "Demuestra con matemáticas que no existen soluciones mágicas gratis en economía."
+    lo_que_no_mide: "No dice cuál opción DEBES elegir, solo cuáles son las más inteligentes y sin desperdicio."
+    sinonimos: ["conjunto no dominado", "óptimo de Pareto", "frontera de eficiencia"]
+    nivel_de_detalle: "intermedio"
+
+  - id: "monte_carlo"
+    nombre_simple: "Simulación de miles de futuros posibles con azar"
+    nombre_tecnico: "Simulación estocástica de Monte Carlo (1.000 corridas)"
+    categoria: "Métodos y Estadística"
+    definicion_corta: "Repetir la simulación muchas veces agregando pequeñas variaciones al azar para ver qué tan estables son los resultados."
+    analogia_cotidiana: "Probar una receta 1.000 veces variando un poco el horno para comprobar que nunca se queme."
+    ejemplo_con_datos: "Se simulan 1.000 trayectorias para obtener el rango probable (bandas p10 a p90)."
+    como_leerlo: "Si la banda es angosta, el resultado es muy seguro; si es muy ancha, existe mucha incertidumbre."
+    por_que_importa: "Evita dar falsas certezas y nos prepara para el peor escenario posible ante crisis imprevistas."
+    lo_que_no_mide: "No puede prever eventos cisne negro completamente fuera de los supuestos del modelo."
+    sinonimos: ["análisis de riesgo estocástico", "muestreo probabilístico"]
+    nivel_de_detalle: "intermedio"
+
+  - id: "p10_p90_band"
+    nombre_simple: "Rango probable de resultados (8 de cada 10 casos)"
+    nombre_tecnico: "Intervalo interpercentil 10 al 90 (p10–p90)"
+    categoria: "Métodos y Estadística"
+    definicion_corta: "Franja donde caen el 80% de las simulaciones, descartando el 10% más pesimista y el 10% más optimista."
+    analogia_cotidiana: "El pronóstico del tiempo: 'La temperatura estará probablemente entre 18°C y 24°C'."
+    ejemplo_con_datos: "La línea central es el resultado esperado (p50) y la sombra muestra la variación probable."
+    como_leerlo: "La línea del medio es el caso típico; la zona sombreada muestra el margen realista de variación."
+    por_que_importa: "Permite a los planificadores presupuestar considerando tanto tiempos buenos como difíciles."
+    lo_que_no_mide: "No descarta por completo catástrofes extremas que caen en el 10% más bajo."
+    sinonimos: ["banda de confianza", "rango de probabilidad"]
+    nivel_de_detalle: "simple"

@@ -1,0 +1,34 @@
+# Core LLM and Agent Orchestration
+groq>=0.18.0
+litellm>=1.50.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-groq>=0.2.0
+langgraph>=0.2.0
+pydantic>=2.8.0
+
+# Macroeconomic Simulation & ABM
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+mesa>=2.3.0
+
+# Multi-Objective Optimization
+pymoo>=0.6.1
+
+# Real Data & APIs
+python-dotenv>=1.0.0
+requests>=2.31.0
+wbgapi>=1.0.0
+
+# UI, Visualization & Reporting
+streamlit>=1.38.0
+plotly>=5.24.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+reportlab>=4.2.0
+markdown2>=2.5.0
+
+# Testing & Quality
+pytest>=8.3.0
+pytest-asyncio>=0.24.0

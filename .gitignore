@@ -1,0 +1,35 @@
+# Environment variables and secrets
+.env
+.env.local
+*.key
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Output directories & cache
+outputs/*.sqlite
+outputs/debate_*.json
+outputs/debate_session_latest.json
+outputs/*.png
+outputs/*.svg
+outputs/*.pdf
+outputs/*.md
+outputs/charts/
+!outputs/golden_run/
+!outputs/golden_run/**
+!outputs/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
