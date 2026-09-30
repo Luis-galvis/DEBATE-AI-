@@ -92,7 +92,7 @@ flowchart TD
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/your-username/debate.git
+git clone https://github.com/Luis-galvis/DEBATEAI.git
 cd debate
 python -m venv venv
 # Windows:
@@ -142,9 +142,8 @@ python -m streamlit run src/app/dashboard.py
 debate/
 ├── config/                    # Pydantic-validated parameters (economic_parameters.yaml)
 ├── data/                      # Real calibration datasets (Colombia, Sweden, USA)
-├── docs/                      # Documentation, slide decks, video recording scripts
-│   ├── slides/                # LinkedIn interactive slide deck & carousel
-│   └── video/                 # Full production audiovisual script (GUION_VIDEO.md)
+├── docs/                      # Technical architecture documentation & slide decks
+│   └── DOCUMENTO_TECNICO_ARQUITECTURA.md  # Full engineering deep-dive
 ├── outputs/                   # Golden runs, JSON logs, and verified reports
 ├── src/
 │   ├── agents/                # Debater archetypes, Referee, and SQLite Cache

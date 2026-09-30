@@ -1,5 +1,8 @@
 # Environment variables and secrets
 .env
+
+# Video production scripts (not for public release)
+docs/video/
 .env.local
 *.key
 
